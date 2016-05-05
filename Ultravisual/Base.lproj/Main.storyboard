@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Gi5-eq-qj2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Inspirations View Controller-->
+        <scene sceneID="GAb-ki-uCL">
+            <objects>
+                <collectionViewController id="Gi5-eq-qj2" customClass="InspirationsViewController" customModule="Ultravisual" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="tNe-IU-296">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewLayout key="collectionViewLayout" id="o8Y-lF-YYQ" customClass="UltravisualLayout" customModule="Ultravisual" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InspirationCell" id="n3U-hs-Bjw" customClass="InspirationCell" customModule="Ultravisual" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ww-Ug-JBZ">
+                                            <rect key="frame" x="0.0" y="-79" width="192" height="280"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="280" id="XIk-FP-5Rx"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xW-lG-9r8">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyr-1D-etI">
+                                            <rect key="frame" x="0.0" y="74" width="200" height="52"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="38"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time, Room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuF-fx-bgK">
+                                            <rect key="frame" x="0.0" y="127" width="200" height="23.5"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPu-Lc-MF2">
+                                            <rect key="frame" x="0.0" y="150.5" width="200" height="23.5"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="RuF-fx-bgK" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="0Jm-Um-XmL"/>
+                                    <constraint firstItem="2xW-lG-9r8" firstAttribute="top" secondItem="n3U-hs-Bjw" secondAttribute="top" id="9OO-d3-yD0"/>
+                                    <constraint firstAttribute="trailing" secondItem="2xW-lG-9r8" secondAttribute="trailing" id="9re-gi-ep8"/>
+                                    <constraint firstAttribute="trailing" secondItem="9ww-Ug-JBZ" secondAttribute="trailing" constant="8" id="BHc-in-2Uv"/>
+                                    <constraint firstItem="Cyr-1D-etI" firstAttribute="centerX" secondItem="n3U-hs-Bjw" secondAttribute="centerX" id="Def-Zu-lwf"/>
+                                    <constraint firstAttribute="trailing" secondItem="RuF-fx-bgK" secondAttribute="trailing" id="HjN-HN-yQu"/>
+                                    <constraint firstItem="Cyr-1D-etI" firstAttribute="centerY" secondItem="n3U-hs-Bjw" secondAttribute="centerY" id="MhE-3Y-Zjx"/>
+                                    <constraint firstItem="9ww-Ug-JBZ" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="PJp-Ow-eph"/>
+                                    <constraint firstAttribute="bottom" secondItem="2xW-lG-9r8" secondAttribute="bottom" id="U81-UT-SHU"/>
+                                    <constraint firstItem="RuF-fx-bgK" firstAttribute="top" secondItem="Cyr-1D-etI" secondAttribute="bottom" constant="1" id="V4n-bd-FMQ"/>
+                                    <constraint firstItem="9ww-Ug-JBZ" firstAttribute="centerY" secondItem="n3U-hs-Bjw" secondAttribute="centerY" constant="-39" id="eLW-WX-ztR"/>
+                                    <constraint firstItem="2xW-lG-9r8" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="fOX-5L-17k"/>
+                                    <constraint firstItem="Cyr-1D-etI" firstAttribute="leading" secondItem="2xW-lG-9r8" secondAttribute="leading" id="hwU-Zb-XYs"/>
+                                    <constraint firstItem="dPu-Lc-MF2" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="jpC-lj-9wX"/>
+                                    <constraint firstAttribute="trailing" secondItem="dPu-Lc-MF2" secondAttribute="trailing" id="k8U-Kv-voJ"/>
+                                    <constraint firstItem="dPu-Lc-MF2" firstAttribute="top" secondItem="RuF-fx-bgK" secondAttribute="bottom" id="y4H-Y2-2UE"/>
+                                </constraints>
+                                <size key="customSize" width="200" height="200"/>
+                                <connections>
+                                    <outlet property="imageCoverView" destination="2xW-lG-9r8" id="yRI-j0-kwk"/>
+                                    <outlet property="imageView" destination="9ww-Ug-JBZ" id="tqo-MB-Bp6"/>
+                                    <outlet property="speakerLabel" destination="dPu-Lc-MF2" id="Hjl-7A-PH1"/>
+                                    <outlet property="timeAndRoomLabel" destination="RuF-fx-bgK" id="EEj-AE-CIz"/>
+                                    <outlet property="titleLabel" destination="Cyr-1D-etI" id="ZQK-zw-XIR"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Gi5-eq-qj2" id="3ch-Hp-kRG"/>
+                            <outlet property="delegate" destination="Gi5-eq-qj2" id="xW1-B0-dmE"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K9E-Uw-G83" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544" y="432"/>
+        </scene>
+    </scenes>
+</document>
